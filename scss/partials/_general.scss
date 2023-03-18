@@ -1,13 +1,88 @@
-
 @use 'var' as *;
 @use 'mix' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 
 html {
-   
     @include selection;
 }
 
 
-// @media only screen and (max-width: 500px) {}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem
+}
+
+button[type="submit"] {
+    display: inline-block;
+    border: orange 2px solid;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-inline: auto;
+}
+
+form {
+    @include flexCenter($justify: space-between, $align: flex-start);
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+
+    input {
+        width: 80%;
+        border-radius: 5px;
+        border: none;
+        color: #333;
+
+        &::placeholder {
+            opacity: .7;
+        }
+    }
+}
+
+
+.hero {
+    @include flexCenter;
+    height: 50vh;
+    position: relative;
+    isolation: isolate;
+}
+
+#div {
+    box-shadow: 1px 1px 10px black;
+    @include flexCenter;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: #333;
+        text-align: center;
+    }
+}
+
+.alert {
+    margin: 0;
+    padding: .1rem;
+    padding-right: 48px;
+}
+
+.alert-dismissible .btn-close {
+    padding: .5rem;
+}
+
+#css {
+    padding: 1rem;
+    width: max-content;
+}
+
+.output {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

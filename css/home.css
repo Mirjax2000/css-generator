@@ -1,0 +1,134 @@
+:root {
+  --h1-fs:1.75rem;
+  --par-fs:0.9375rem;
+  --btn-fs:0.9375rem;
+  --num-fs:1rem;
+}
+
+html ::-moz-selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+html ::selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button[type=submit] {
+  display: inline-block;
+  border: orange 2px solid;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-inline: auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+}
+form input {
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  color: #333;
+}
+form input::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+form input::-moz-placeholder {
+  opacity: 0.7;
+}
+form input:-ms-input-placeholder {
+  opacity: 0.7;
+}
+form input::-ms-input-placeholder {
+  opacity: 0.7;
+}
+form input::placeholder {
+  opacity: 0.7;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  position: relative;
+  isolation: isolate;
+}
+
+#div {
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+#div h2 {
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  text-align: center;
+}
+
+.alert {
+  margin: 0;
+  padding: 0.1rem;
+  padding-right: 48px;
+}
+
+.alert-dismissible .btn-close {
+  padding: 0.5rem;
+}
+
+#css {
+  padding: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.output {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=home.css.map */

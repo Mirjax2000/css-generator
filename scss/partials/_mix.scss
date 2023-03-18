@@ -181,7 +181,7 @@
 
 @mixin mQmax {
     @media only screen and (max-width:$mQmax) {
-        :root {}
+        // :root {}
 
         @content;
     }
@@ -190,7 +190,7 @@
 @mixin mQmid {
     @media only screen and (max-width:$mQmid) {
 
-        :root {}
+        // :root {}
 
         @content;
     }
@@ -198,7 +198,7 @@
 
 @mixin mQmin {
     @media only screen and (max-width:$mQmin) {
-        :root {}
+        // :root {}
 
         @content;
     }
@@ -207,11 +207,8 @@
 @mixin mQdefault($width) {
     @media only screen and (max-width:$width) {
 
-        :root {}
+        // :root {}
 
         @content;
     }
 }
-
-
-

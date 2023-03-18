@@ -16,10 +16,91 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
 </head>
 
 <body>
-    <h1>Lets Go Biatch!!!</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <form id="sizeForm" class="col-auto m-1">
+                <label for="width">Enter width in px:</label>
+                <input id="width" type="text" placeholder="100 -500" value="">
+                <div id="widthAlert"></div>
+
+                <label for="height">Enter height in px:</label>
+                <input id="height" tpe="text" placeholder="100 -500" value="">
+                <div id="heightAlert"></div>
+
+                <button type="submit">Enter</button>
+            </form>
+
+            <form id="textForm" class="col-auto m-1">
+                <label for="text">Enter text:</label>
+                <input id="text" type="text" placeholder="max 10 char" value="">
+                <div id="textAlert"></div>
+
+                <label for="size">Enter font-size:</label>
+                <input id="size" type="text" placeholder="max 50" value="">
+                <div id="sizeAlert"></div>
+
+                <button type="submit">Enter</button>
+            </form>
+
+            <form id="contentForm" class="col-auto m-1">
+                <label for="select">Choose font color:</label>
+                <select name="color" id="font">
+                    <option value="black">Black</option>
+                    <option value="gray">gray</option>
+                    <option value="red">Red</option>
+                    <option value="coral">Light Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="lightBlue">Light Blue</option>
+                    <option value="green">Green</option>
+                    <option value="lightGreen">Light Green</option>
+                    <option value="white">White</option>
+                </select>
+
+                <label for="select">Choose backGround color:</label>
+                <select name="color" id="bckGround">
+                    <option value="white">white</option>
+                    <option value="green">Green</option>
+                    <option value="lightGreen">Light Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="lightBlue">Light Blue</option>
+                    <option value="lightRed">Light Red</option>
+                    <option value="red">Red</option>
+                    <option value="gray">gray</option>
+                    <option value="black">black</option>
+                </select>
+                <button type="submit">Enter</button>
+            </form>
+
+            <form id="visualForm" class="col-auto m-1">
+                <label for="border">Enter border radius:</label>
+                <input id="border" type="text" placeholder="0 - 100" value="0">
+                <div id="borderAlert"></div>
+
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="container hero">
+        <div id="div">
+            <h2>Text</h2>
+        </div>
+        <div class="container output">
+
+            <div class="col-6">
+                <button id="bttn" type="button">Generate CSS</button>
+
+                <p id="css" class="text-start"></p>
+
+            </div>
+        </div>
+    </div>
+
 
     <script src="./js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
